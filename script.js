@@ -243,3 +243,32 @@ form.addEventListener('submit', (e) => {
     formNote.textContent = '';
   });
 });
+const dot = document.getElementById('cursor-dot');
+    const ring = document.getElementById('cursor-ring');
+ 
+    let mouseX = 0, mouseY = 0;
+    let ringX = 0, ringY = 0;
+ 
+    document.addEventListener('mousemove', (e) => {
+      mouseX = e.clientX;
+      mouseY = e.clientY;
+      dot.style.left = mouseX + 'px';
+      dot.style.top = mouseY + 'px';
+    });
+ 
+    // halqa biroz kechikib, yumshoq harakatlanadi
+    function animateRing() {
+      ringX += (mouseX - ringX) * 0.15;
+      ringY += (mouseY - ringY) * 0.15;
+      ring.style.left = ringX + 'px';
+      ring.style.top = ringY + 'px';
+      requestAnimationFrame(animateRing);
+    }
+    animateRing();
+ 
+    // link va tugmalar ustida halqa kattalashadi
+    document.querySelectorAll('a, button, .card').forEach((el) => {
+      el.addEventListener('mouseenter', () => document.body.classList.add('hovering'));
+      el.addEventListener('mouseleave', () => document.body.classList.remove('hovering'));
+    });
+

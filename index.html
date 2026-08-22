@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Xushnoza Mukhtarova — Frontend Developer</title>
+<meta name="description" content="Portfolio of Xushnoza Mukhtarova, a frontend developer exploring AI.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="volt-cursor" aria-hidden="true"></div>
+
+<!-- ===== NAV ===== -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#home" class="nav-logo">
+      <span class="nav-logo-bolt">⚡</span>XM<span class="nav-logo-dot">.</span>
+    </a>
+
+    <nav class="nav-menu" id="navMenu">
+      <a href="#home" class="nav-link active" data-section="home">Home</a>
+      <a href="#about" class="nav-link" data-section="about">About</a>
+      <a href="#projects" class="nav-link" data-section="projects">Projects</a>
+      <a href="#skills" class="nav-link" data-section="skills">Skills</a>
+      <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+    </nav>
+
+    <a href="#contact" class="nav-cta">Let's talk</a>
+
+    <button class="nav-burger" id="navBurger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="home">
+  <canvas class="hero-canvas" id="boltCanvas"></canvas>
+  <div class="hero-grid" aria-hidden="true"></div>
+
+  <div class="hero-inner">
+    <p class="eyebrow"><span class="eyebrow-pulse"></span>Available for opportunities</p>
+    <h1 class="hero-title">
+      <span class="hero-title-line">Xushnoza</span>
+      <span class="hero-title-line hero-title-accent">Mukhtarova<span class="hero-title-charge">.</span></span>
+    </h1>
+    <p class="hero-role">
+      <span class="hero-role-tag">Frontend Developer</span>
+      <span class="hero-role-sep">/</span>
+      <span class="hero-role-tag">AI Enthusiast</span>
+    </p>
+    <p class="hero-desc">
+      I build clean, responsive interfaces with HTML, CSS &amp; JavaScript —
+      and I'm currently charging up my skills in artificial intelligence.
+    </p>
+    <div class="hero-actions">
+      <a href="#projects" class="btn btn-primary">
+        <span>View Projects</span>
+        <svg viewBox="0 0 24 24" width="18" height="18"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <a href="#contact" class="btn btn-ghost"><span>Get in Touch</span></a>
+    </div>
+  </div>
+
+  <a href="#about" class="hero-scroll" aria-label="Scroll down">
+    <span class="hero-scroll-line"></span>
+    <span class="hero-scroll-text">Scroll</span>
+  </a>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section class="section" id="about">
+  <div class="section-inner">
+    <p class="section-eyebrow">02 — About</p>
+    <div class="about-grid">
+      <h2 class="section-title">
+        Currently building,<br>
+        <span class="text-accent">always learning.</span>
+      </h2>
+      <div class="about-body">
+        <p>
+          I'm a frontend developer working with HTML, CSS and JavaScript —
+          turning ideas into interfaces that actually feel good to use.
+          I don't have formal work experience yet, and I'm not going to
+          pretend otherwise: what I have instead is a habit of building
+          things, breaking them, and figuring out why.
+        </p>
+        <p>
+          Right now I'm splitting my focus between sharpening my frontend
+          fundamentals and exploring artificial intelligence — trying to
+          understand not just how to style a page, but how the systems
+          behind modern products actually think.
+        </p>
+        <div class="about-stats">
+          <div class="about-stat">
+            <span class="about-stat-num">8+</span>
+            <span class="about-stat-label">Repositories on GitHub</span>
+          </div>
+          <div class="about-stat">
+            <span class="about-stat-num">3</span>
+            <span class="about-stat-label">Core languages — HTML / CSS / JS</span>
+          </div>
+          <div class="about-stat">
+            <span class="about-stat-num">∞</span>
+            <span class="about-stat-label">Curiosity about AI</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROJECTS ===== -->
+<section class="section section-alt" id="projects">
+  <div class="section-inner">
+    <p class="section-eyebrow">03 — Projects</p>
+    <h2 class="section-title">Selected work</h2>
+    <p class="section-sub">A few things I've built while learning by doing. More on GitHub.</p>
+
+    <div class="projects-grid">
+
+      <article class="project-card">
+        <div class="project-frame" data-tone="violet">
+          <div class="project-frame-bar"><span></span><span></span><span></span></div>
+          <div class="project-frame-screen">
+            <span class="project-frame-glyph">A</span>
+          </div>
+        </div>
+        <div class="project-body">
+          <h3 class="project-title">Alivio</h3>
+          <p class="project-desc">A responsive landing page focused on clean layout and clear visual hierarchy.</p>
+          <div class="project-tags"><span>HTML</span><span>CSS</span></div>
+          <div class="project-links">
+            <a href="https://aliviosayt.netlify.app/" target="_blank" rel="noopener">Live demo ↗</a>
+            <a href="https://github.com/mhtrvaa/alivio" target="_blank" rel="noopener">Code ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-frame" data-tone="cyan">
+          <div class="project-frame-bar"><span></span><span></span><span></span></div>
+          <div class="project-frame-screen">
+            <span class="project-frame-glyph">⚔</span>
+          </div>
+        </div>
+        <div class="project-body">
+          <h3 class="project-title">Crystal Legends</h3>
+          <p class="project-desc">A game-themed site built to practice layout, styling and interactive detail work.</p>
+          <div class="project-tags"><span>CSS</span><span>Game UI</span></div>
+          <div class="project-links">
+            <a href="https://crystallegends.netlify.app/" target="_blank" rel="noopener">Live demo ↗</a>
+            <a href="https://github.com/mhtrvaa/game" target="_blank" rel="noopener">Code ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-frame" data-tone="pink">
+          <div class="project-frame-bar"><span></span><span></span><span></span></div>
+          <div class="project-frame-screen">
+            <span class="project-frame-glyph">🔥</span>
+          </div>
+        </div>
+        <div class="project-body">
+          <h3 class="project-title">Fire Food</h3>
+          <p class="project-desc">A food-service concept page styled around a bold, appetite-driven visual theme.</p>
+          <div class="project-tags"><span>CSS</span></div>
+          <div class="project-links">
+            <a href="https://firefood1.netlify.app/" target="_blank" rel="noopener">Live demo ↗</a>
+            <a href="https://github.com/mhtrvaa/fire-food" target="_blank" rel="noopener">Code ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-frame" data-tone="pink">
+          <div class="project-frame-bar"><span></span><span></span><span></span></div>
+          <div class="project-frame-screen">
+            <span class="project-frame-glyph">◎</span>
+          </div>
+        </div>
+        <div class="project-body">
+          <h3 class="project-title">NFTs</h3>
+          <p class="project-desc">A marketplace-style concept page exploring card grids and product-focused layout.</p>
+          <div class="project-tags"><span>HTML</span></div>
+          <div class="project-links">
+            <a href="https://nfts01.netlify.app/" target="_blank" rel="noopener">Live demo ↗</a>
+            <a href="https://github.com/mhtrvaa/NFTs" target="_blank" rel="noopener">Code ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-frame" data-tone="violet">
+          <div class="project-frame-bar"><span></span><span></span><span></span></div>
+          <div class="project-frame-screen">
+            <span class="project-frame-glyph">$</span>
+          </div>
+        </div>
+        <div class="project-body">
+          <h3 class="project-title">Shablon</h3>
+          <p class="project-desc">A full digital marketplace: users sign up, buy templates, pay, and download from their account — with an admin panel and Click/Payme payment integration.</p>
+          <div class="project-tags"><span>Node.js</span><span>Express</span><span>Full-stack</span></div>
+          <div class="project-links">
+            <a href="https://shablon-production.up.railway.app" target="_blank" rel="noopener">Live demo ↗</a>
+            <a href="https://github.com/mhtrvaa/shablon" target="_blank" rel="noopener">Code ↗</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <a href="https://github.com/mhtrvaa" target="_blank" rel="noopener" class="btn btn-ghost projects-more">
+      <span>See all repositories on GitHub</span>
+      <svg viewBox="0 0 24 24" width="18" height="18"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+  </div>
+</section>
+
+<!-- ===== SKILLS ===== -->
+<section class="section" id="skills">
+  <div class="section-inner">
+    <p class="section-eyebrow">04 — Skills</p>
+    <h2 class="section-title">What I work with</h2>
+
+    <div class="skills-grid">
+      <div class="skill-card">
+        <div class="skill-icon" data-tone="cyan">
+          <svg viewBox="0 0 24 24" width="26" height="26"><path d="M4 3h16l-1.5 17L12 22l-6.5-2L4 3z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M7 7h10l-.4 4.5H9l.2 2.2 2.8.9 2.8-.9.2-2.4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>HTML</h3>
+        <p>Semantic, accessible structure as the foundation of every page.</p>
+        <div class="skill-bar"><span style="--level:88%"></span></div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon" data-tone="violet">
+          <svg viewBox="0 0 24 24" width="26" height="26"><path d="M4 3h16l-1.5 17L12 22l-6.5-2L4 3z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 8.5l4-2v2.4l-2.6 1.1 2.6.9V13l-4-1.5V8.5zM16 8.5l-4-2v2.4l2.6 1.1-2.6.9V13l4-1.5V8.5z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>CSS</h3>
+        <p>Layout, motion and visual detail — making interfaces feel intentional.</p>
+        <div class="skill-bar"><span style="--level:85%"></span></div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon" data-tone="pink">
+          <svg viewBox="0 0 24 24" width="26" height="26"><rect x="3" y="3" width="18" height="18" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 15.5c.4.9 1.1 1.5 2 1.5 1.2 0 2-.7 2-2v-5M14 15.7c.3.7 1 1.3 2 1.3 1.3 0 2-.7 2-1.7 0-2.3-3.6-1.5-3.6-3.6 0-.9.7-1.6 1.8-1.6.9 0 1.5.4 1.8 1" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        </div>
+        <h3>JavaScript</h3>
+        <p>Bringing interfaces to life with logic, interactivity and state.</p>
+        <div class="skill-bar"><span style="--level:78%"></span></div>
+      </div>
+
+      <div class="skill-card skill-card-charging">
+        <div class="skill-icon" data-tone="charge">
+          <svg viewBox="0 0 24 24" width="26" height="26"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8z" fill="currentColor"/></svg>
+        </div>
+        <h3>AI &amp; Machine Learning</h3>
+        <p>Currently learning — exploring how intelligent systems are designed and built.</p>
+        <div class="skill-bar skill-bar-charging"><span style="--level:40%"></span></div>
+        <span class="skill-tag">In progress</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section class="section section-alt" id="contact">
+  <div class="section-inner">
+    <p class="section-eyebrow">05 — Contact</p>
+    <div class="contact-grid">
+      <div class="contact-intro">
+        <h2 class="section-title">Let's build<br><span class="text-accent">something together.</span></h2>
+        <p class="section-sub">
+          Have a project, an opportunity, or just want to say hi?
+          My inbox is open.
+        </p>
+
+        <ul class="contact-list">
+          <li>
+            <span class="contact-icon"><svg viewBox="0 0 24 24" width="18" height="18"><path d="M3 6h18v12H3z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M3 7l9 6 9-6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <a href="mailto:xushnozamuxtorova37@gmail.com" id="emailLink">xushnozamuxtorova37@gmail.com</a>
+          </li>
+          <li>
+            <span class="contact-icon"><svg viewBox="0 0 24 24" width="18" height="18"><path d="M21 4 2 11.5l6.5 2M21 4 15.5 21l-7-7.5M21 4 8.5 13.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <a href="https://t.me/mhtrvaa_o7" target="_blank" rel="noopener">@mhtrvaa_o7</a>
+          </li>
+          <li>
+            <span class="contact-icon"><svg viewBox="0 0 24 24" width="18" height="18"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor"/></svg></span>
+            <a href="https://instagram.com/wfvrx_" target="_blank" rel="noopener">@wfvrx_</a>
+          </li>
+          <li>
+            <span class="contact-icon"><svg viewBox="0 0 24 24" width="18" height="18"><path d="M12 2a10 10 0 0 0-3.16 19.5c.5.1.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.28.1-2.66 0 0 .84-.27 2.75 1.02a9.6 9.6 0 0 1 5 0c1.9-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.41.1 2.66.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2z" fill="currentColor"/></svg></span>
+            <a href="https://github.com/mhtrvaa" target="_blank" rel="noopener">github.com/mhtrvaa</a>
+          </li>
+        </ul>
+      </div>
+
+      <form class="contact-form" id="contactForm" action="https://formspree.io/f/xushnozamuxtorova37@gmail.com" method="POST" novalidate>
+        <div class="form-row">
+          <label for="cf-name">Name</label>
+          <input type="text" id="cf-name" name="name" placeholder="Your name" required>
+        </div>
+        <div class="form-row">
+          <label for="cf-email">Email</label>
+          <input type="email" id="cf-email" name="email" placeholder="you@example.com" required>
+        </div>
+        <div class="form-row">
+          <label for="cf-message">Message</label>
+          <textarea id="cf-message" name="message" rows="5" placeholder="Tell me about your project or idea..." required></textarea>
+        </div>
+        <input type="hidden" name="_subject" value="New message from your portfolio site">
+        <input type="text" name="_gotcha" style="display:none">
+        <button type="submit" class="btn btn-primary form-submit">
+          <span id="formSubmitText">Send Message</span>
+          <svg viewBox="0 0 24 24" width="18" height="18"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4 20-7z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <button type="button" class="form-copy-fallback" id="copyEmailBtn">Or copy email address instead</button>
+        <p class="form-note" id="formNote" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="footer-inner">
+    <a href="#home" class="nav-logo footer-logo"><span class="nav-logo-bolt">⚡</span>XM<span class="nav-logo-dot">.</span></a>
+    <p>&copy; <span id="year"></span> Xushnoza Mukhtarova. Built with HTML, CSS &amp; JavaScript.</p>
+    <a href="#home" class="footer-top">Back to top ↑</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+
